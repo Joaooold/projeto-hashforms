@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>HashForm</title>
+  </head>
+  <body>
+    <header>
+      <img
+        src="https://d1muf25xaso8hp.cloudfront.net/https%3A%2F%2Fa6d41686876ceccfc436dd310b9e49aa.cdn.bubble.io%2Fd219%2Ff1723121793047x871980606331503000%2Foie_transparent.png?w=32&h=45&auto=compress&dpr=1&fit=max"
+        alt=""
+      />
+      <img
+        src="https://d1muf25xaso8hp.cloudfront.net/https%3A%2F%2Fa6d41686876ceccfc436dd310b9e49aa.cdn.bubble.io%2Fd219%2Ff1723121799406x669791932198187400%2Foie_transparent%2520%25281%2529-fotor-202408089554.png?w=96&h=28&auto=compress&dpr=1&fit=max"
+        alt=""
+      />
+    </header>
+    <main>
+      <section class="todos-dados">
+        <section class="secao-dados">
+          <div class="meus-dados">
+            <h1>
+              <span
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="size-6"
+                  width="25px"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M17.982 18.725A7.488 7.488 0 0 0 12 15.75a7.488 7.488 0 0 0-5.982 2.975m11.963 0a9 9 0 1 0-11.963 0m11.963 0A8.966 8.966 0 0 1 12 21a8.966 8.966 0 0 1-5.982-2.275M15 9.75a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"
+                  />
+                </svg> </span
+              >Meus dados
+            </h1>
+            <p>Confirme seus dados. Eles aparecerão em sua nota fiscal</p>
+          </div>
+          <form id="myForm">
+            <fieldset>
+              <legend>Dados Pessoais</legend>
+              <div class="dados-pessoais">
+                <div class="campo">
+                  <label for="nome">Nome: </label>
+                  <input type="text" name="nome" id="nome" placeholder="Digite seu nome" />
+                </div>
+                <div class="campo">
+                  <label for="cpf">CPF: </label>
+                  <input type="number" name="cpf" id="cpf" placeholder="Digite seu CPF" />
+                </div>
+                <div class="campo">
+                  <label for="telefone">Telefone: </label>
+                  <input type="number" name="tel" id="telefone" placeholder="DIgite seu telefone" />
+                </div>
+              </div>
+            </fieldset>
+
+            <fieldset>
+              <legend>Endereço</legend>
+              <div class="endereco">
+                <div class="campo">
+                  <label for="cep">CEP: </label>
+                  <input type="number" name="CEP" id="cep" placeholder="Digite seu CEP" />
+                </div>
+                <div class="campo">
+                  <label for="rua">Rua: </label>
+                  <input type="text" name="rua" id="rua" placeholder="Digite sua Rua" />
+                </div>
+                <div class="campo">
+                  <label for="numero">Número: </label>
+                  <input type="number" name="numero" id="numero" placeholder="Digite seu numero da casa" />
+                </div>
+                <div class="campo">
+                  <label for="complemento">Complemento: </label>
+                  <input type="text" name="complemento" id="complemento" placeholder="Digite seu complemento" />
+                </div>
+                <div class="campo">
+                  <label for="bairro">Bairro: </label>
+                  <input type="text" name="bairro" id="bairro" placeholder="Digite seu bairro" />
+                </div>
+                <div class="campo">
+                  <label for="cidade">Cidade: </label>
+                  <input type="text" name="cidade" id="cidade" placeholder="Digite sua cidade" />
+                </div>
+                <div class="campo">
+                  <label for="estado">Estado: </label>
+                  <input type="text" name="estado" id="estado" placeholder="Digite seu estado" />
+                </div>
+              </div>
+            </fieldset>
+            <input type="submit" value="AVANÇAR" id="btnAvancar" />
+          </form>
+        </section>
+      </section>
+      <section class="desconto">
+        <div class="resumo">
+          <h2>
+            <span
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="size-6"
+                width="30px"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M9 12h3.75M9 15h3.75M9 18h3.75m3 .75H18a2.25 2.25 0 0 0 2.25-2.25V6.108c0-1.135-.845-2.098-1.976-2.192a48.424 48.424 0 0 0-1.123-.08m-5.801 0c-.065.21-.1.433-.1.664 0 .414.336.75.75.75h4.5a.75.75 0 0 0 .75-.75 2.25 2.25 0 0 0-.1-.664m-5.8 0A2.251 2.251 0 0 1 13.5 2.25H15c1.012 0 1.867.668 2.15 1.586m-5.8 0c-.376.023-.75.05-1.124.08C9.095 4.01 8.25 4.973 8.25 6.108V8.25m0 0H4.875c-.621 0-1.125.504-1.125 1.125v11.25c0 .621.504 1.125 1.125 1.125h9.75c.621 0 1.125-.504 1.125-1.125V9.375c0-.621-.504-1.125-1.125-1.125H8.25ZM6.75 12h.008v.008H6.75V12Zm0 3h.008v.008H6.75V15Zm0 3h.008v.008H6.75V18Z"
+                />
+              </svg> </span
+            >Resumo
+          </h2>
+          <p>Black Friday - Lote 01: R$ 1.200,00</p>
+          <p>Total: 12x R$ 100,00 ou R$ 1200,00 á vista</p>
+        </div>
+        <div id="aplicarDesconto">
+          <button id="btnDesconto">
+            Aplicar cupom de desconto
+            <span id="icone-seta">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 16 16"
+                fill="currentColor"
+                class="seta-cima"
+                style="width: 15px"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M11.78 9.78a.75.75 0 0 1-1.06 0L8 7.06 5.28 9.78a.75.75 0 0 1-1.06-1.06l3.25-3.25a.75.75 0 0 1 1.06 0l3.25 3.25a.75.75 0 0 1 0 1.06Z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 16 16"
+                fill="currentColor"
+                class="seta-baixo"
+                style="width: 15px"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M4.22 6.22a.75.75 0 0 1 1.06 0L8 8.94l2.72-2.72a.75.75 0 1 1 1.06 1.06l-3.25 3.25a.75.75 0 0 1-1.06 0L4.22 7.28a.75.75 0 0 1 0-1.06Z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+            </span>
+          </button>
+          <div class="caixa-desconto">
+            <input type="text" id="descontoText" class="desconto-text-display" placeholder="Digite o código" />
+            <button id="btnAplicar" class="btn-aplicar-display">Aplicar</button>
+            <p id="paragrafoDesconto"></p>
+            <p>Preço total: R$ <span id="precoDescontoSpan">1200,00</span></p>
+          </div>
+          <div class="icons-banks">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+              class="size-6"
+              width="24"
+              height="24"
+            >
+              <path d="M12 7.5a2.25 2.25 0 1 0 0 4.5 2.25 2.25 0 0 0 0-4.5Z" />
+              <path
+                fill-rule="evenodd"
+                d="M1.5 4.875C1.5 3.839 2.34 3 3.375 3h17.25c1.035 0 1.875.84 1.875 1.875v9.75c0 1.036-.84 1.875-1.875 1.875H3.375A1.875 1.875 0 0 1 1.5 14.625v-9.75ZM8.25 9.75a3.75 3.75 0 1 1 7.5 0 3.75 3.75 0 0 1-7.5 0ZM18.75 9a.75.75 0 0 0-.75.75v.008c0 .414.336.75.75.75h.008a.75.75 0 0 0 .75-.75V9.75a.75.75 0 0 0-.75-.75h-.008ZM4.5 9.75A.75.75 0 0 1 5.25 9h.008a.75.75 0 0 1 .75.75v.008a.75.75 0 0 1-.75.75H5.25a.75.75 0 0 1-.75-.75V9.75Z"
+                clip-rule="evenodd"
+              />
+              <path
+                d="M2.25 18a.75.75 0 0 0 0 1.5c5.4 0 10.63.722 15.6 2.075 1.19.324 2.4-.558 2.4-1.82V18.75a.75.75 0 0 0-.75-.75H2.25Z"
+              />
+            </svg>
+
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+              <path
+                d="M11.454 17.021c.048.041.1.082.151.122a6.173 6.173 0 0 1-3.42 1.03A6.17 6.17 0 0 1 2.01 12a6.175 6.175 0 0 1 9.592-5.144c-.05.043-.1.082-.138.126A6.633 6.633 0 0 0 9.166 12c0 1.925.833 3.755 2.288 5.021zm4.361-11.195a6.14 6.14 0 0 0-3.416 1.03c.049.043.099.082.137.126 1.462 1.263 2.299 3.094 2.299 5.018s-.835 3.753-2.288 5.021c-.049.041-.101.082-.151.122a6.162 6.162 0 0 0 3.418 1.03 6.174 6.174 0 1 0 .001-12.347zM12 7.15A6.152 6.152 0 0 0 9.644 12 6.15 6.15 0 0 0 12 16.853 6.157 6.157 0 0 0 14.357 12 6.15 6.15 0 0 0 12 7.15z"
+              />
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+              <path
+                d="M16.539 9.186a4.155 4.155 0 0 0-1.451-.251c-1.6 0-2.73.806-2.738 1.963-.01.85.803 1.329 1.418 1.613.631.292.842.476.84.737-.004.397-.504.577-.969.577-.639 0-.988-.089-1.525-.312l-.199-.093-.227 1.332c.389.162 1.09.301 1.814.313 1.701 0 2.813-.801 2.826-2.032.014-.679-.426-1.192-1.352-1.616-.563-.275-.912-.459-.912-.738 0-.247.299-.511.924-.511a2.95 2.95 0 0 1 1.213.229l.15.067.227-1.287-.039.009zm4.152-.143h-1.25c-.389 0-.682.107-.852.493l-2.404 5.446h1.701l.34-.893 2.076.002c.049.209.199.891.199.891h1.5l-1.31-5.939zm-10.642-.05h1.621l-1.014 5.942H9.037l1.012-5.944v.002zm-4.115 3.275.168.825 1.584-4.05h1.717l-2.551 5.931H5.139l-1.4-5.022a.339.339 0 0 0-.149-.199 6.948 6.948 0 0 0-1.592-.589l.022-.125h2.609c.354.014.639.125.734.503l.57 2.729v-.003zm12.757.606.646-1.662c-.008.018.133-.343.215-.566l.111.513.375 1.714H18.69v.001h.001z"
+              />
+            </svg>
+            <?xml version="1.0" encoding="utf-8"?>
+            <svg
+              width="24"
+              height="24"
+              version="1.1"
+              id="Layer_1"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              x="0px"
+              y="0px"
+              viewBox="0 0 20 20"
+              style="enable-background: new 0 0 20 20"
+              xml:space="preserve"
+            >
+              <style type="text/css">
+                .st0 {
+                  fill-rule: evenodd;
+                  clip-rule: evenodd;
+                }
+              </style>
+              <path
+                class="st0"
+                d="M17.6,8.5h-7.5v3h4.4c-0.4,2.1-2.3,3.5-4.4,3.4c-2.6-0.1-4.6-2.1-4.7-4.7c-0.1-2.7,2-5,4.7-5.1
+	c1.1,0,2.2,0.4,3.1,1.2l2.3-2.2C14.1,2.7,12.1,2,10.2,2c-4.4,0-8,3.6-8,8s3.6,8,8,8c4.6,0,7.7-3.2,7.7-7.8
+	C17.8,9.6,17.8,9.1,17.6,8.5z"
+              />
+            </svg>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              id="Barcode--Streamline-Ultimate"
+              width="24"
+              height="24"
+            >
+              <desc>Barcode Streamline Icon: https://streamlinehq.com</desc>
+              <path
+                stroke="#000000"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M4.5 8.25v7.5"
+                stroke-width="1.5"
+              ></path>
+              <path
+                stroke="#000000"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M8.25 8.25v4.5"
+                stroke-width="1.5"
+              ></path>
+              <path
+                stroke="#000000"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M15.75 8.25v4.5"
+                stroke-width="1.5"
+              ></path>
+              <path
+                stroke="#000000"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M19.5 8.25v7.5"
+                stroke-width="1.5"
+              ></path>
+              <path
+                stroke="#000000"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M12 8.25v4.5"
+                stroke-width="1.5"
+              ></path>
+              <path
+                stroke="#000000"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M8.25 15.75h7.5"
+                stroke-width="1.5"
+              ></path>
+              <path
+                stroke="#000000"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M2.29 4.5h19.42s1.54 0 1.54 1.54v11.92s0 1.54 -1.54 1.54H2.29s-1.54 0 -1.54 -1.54V6.04s0 -1.54 1.54 -1.54Z"
+                stroke-width="1.5"
+              ></path>
+            </svg>
+          </div>
+        </div>
+        <div class="garantia">
+          <h2>Você tem 15 dias de garantia</h2>
+          <p>Experimente se não gostar ou ver que não é para você, devolvemos seu dinheiro! Sem letras míudas</p>
+          <p class="verdeTexto">
+            <span
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="size-6"
+                width="25px"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M9 12.75 11.25 15 15 9.75m-3-7.036A11.959 11.959 0 0 1 3.598 6 11.99 11.99 0 0 0 3 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285Z"
+                />
+              </svg>
+            </span>
+            Suas informações estão seguras
+          </p>
+          <div class="img-safe"><img src="../img/safe.jpg" alt="Segurança" width="200px" /></div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <p>Termos de uso</p>
+      |
+      <p>Política de privacidade</p>
+    </footer>
+  </body>
+</html>

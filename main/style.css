@@ -1,0 +1,238 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #31343f;
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  flex-flow: column;
+  height: 100vh;
+  color: white;
+}
+header {
+  background-color: #1f2749;
+  display: flex;
+  height: 100px;
+  width: 90%;
+  margin: 0 auto;
+  justify-content: center;
+}
+header img {
+  margin: 15px 0px;
+}
+
+main {
+  background-color: #1f2749;
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+}
+main input {
+  border: 1px solid transparent;
+  transition: border 0.3s;
+}
+.todos-dados {
+  width: 120%;
+}
+.secao-dados {
+  background-color: #27346a;
+  padding: 30px;
+  border-radius: 5px;
+}
+.meus-dados h1 {
+  margin-bottom: 5px;
+}
+.meus-dados {
+  margin-bottom: 10px;
+}
+
+.dados-pessoais {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+.campo {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.campo label {
+  margin-right: 50px;
+}
+.dados-pessoais input {
+  flex: 1;
+  min-width: 200px;
+  background-color: #292929d3;
+  border: none;
+  padding: 10px;
+  border-radius: 7px;
+  color: white;
+}
+
+.endereco {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+
+.endereco input {
+  flex: 1;
+  min-width: 200px;
+  background-color: #292929d3;
+  border: none;
+  padding: 10px;
+  border-radius: 7px;
+  color: white;
+}
+
+#btnAvancar {
+  width: 100%;
+  border: none;
+  padding: 8px;
+  background-color: #419745;
+  color: white;
+}
+h1,
+legend,
+h2,
+#btnDesconto {
+  color: #ea832f;
+  font-weight: 700;
+}
+fieldset {
+  border-color: #ea832f;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.desconto {
+  background-color: #27346a;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+  border-radius: 5px;
+  max-height: 733px;
+}
+
+.resumo {
+  border-bottom: 1px solid #ea832f;
+}
+
+.resumo p,
+.resumo h2 {
+  margin-bottom: 12px;
+}
+
+#aplicarDesconto {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+#btnDesconto {
+  display: flex;
+  justify-content: space-between;
+  min-width: 200px;
+  border: none;
+  color: #ea832f;
+  padding: 3px;
+  background-color: inherit;
+  cursor: pointer;
+}
+.seta-cima {
+  display: none;
+}
+
+.caixa-desconto {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+#descontoText {
+  flex: 1;
+  min-width: 200px;
+  background-color: #292929d3;
+  border: none;
+  padding: 10px;
+  border-radius: 7px;
+  color: white;
+  width: calc(100% - 90px);
+}
+#descontoText:focus {
+  border: 1px solid #ea832f;
+}
+#btnAplicar {
+  padding: 10px 20px;
+  background-color: #ea832f;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  align-self: flex-start;
+}
+
+#paragrafoDesconto {
+  color: #419745;
+}
+
+.icons-banks {
+  display: flex;
+  justify-content: space-evenly;
+  color: black;
+  border-bottom: 1px solid #ea832f;
+  padding: 10px;
+}
+.garantia {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.garantia .verdeTexto {
+  color: #419745;
+  text-align: center;
+}
+.garantia .img-safe {
+  width: 100%;
+  text-align: center;
+}
+.img-safe img {
+  width: 255px;
+  height: 187px;
+  border-radius: 8px;
+}
+footer {
+  width: 90%;
+  margin: 0 auto;
+  background-color: #1f2749;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  gap: 10px;
+}
+
+footer p {
+  color: #ea832f;
+}
+input[type="text"]:focus,
+input[type="number"]:focus {
+  outline: none;
+  border: 1px solid #ea832f;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+  appearance: none;
+}
+.btn-aplicar-display, .desconto-text-display {
+    display: none;
+}
