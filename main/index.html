@@ -48,15 +48,15 @@
               <div class="dados-pessoais">
                 <div class="campo">
                   <label for="nome">Nome: </label>
-                  <input type="text" name="nome" id="nome" placeholder="Digite seu nome" />
+                  <input type="text" name="nome" id="nome" placeholder="Digite seu nome" required />
                 </div>
                 <div class="campo">
                   <label for="cpf">CPF: </label>
-                  <input type="number" name="cpf" id="cpf" placeholder="Digite seu CPF" />
+                  <input type="number" name="cpf" id="cpf" placeholder="Digite seu CPF" required />
                 </div>
                 <div class="campo">
                   <label for="telefone">Telefone: </label>
-                  <input type="number" name="tel" id="telefone" placeholder="DIgite seu telefone" />
+                  <input type="tel" name="tel" id="telefone" placeholder="DIgite seu telefone com (DDD)" required />
                 </div>
               </div>
             </fieldset>
@@ -66,31 +66,37 @@
               <div class="endereco">
                 <div class="campo">
                   <label for="cep">CEP: </label>
-                  <input type="number" name="CEP" id="cep" placeholder="Digite seu CEP" />
+                  <input type="number" name="CEP" id="cep" placeholder="Digite seu CEP" required />
                 </div>
                 <div class="campo">
                   <label for="rua">Rua: </label>
-                  <input type="text" name="rua" id="rua" placeholder="Digite sua Rua" />
+                  <input type="text" name="rua" id="rua" placeholder="Digite sua Rua" required />
                 </div>
                 <div class="campo">
                   <label for="numero">Número: </label>
-                  <input type="number" name="numero" id="numero" placeholder="Digite seu numero da casa" />
+                  <input type="number" name="numero" id="numero" placeholder="Digite seu numero da casa" required />
                 </div>
                 <div class="campo">
                   <label for="complemento">Complemento: </label>
-                  <input type="text" name="complemento" id="complemento" placeholder="Digite seu complemento" />
+                  <input
+                    type="text"
+                    name="complemento"
+                    id="complemento"
+                    placeholder="Digite seu complemento"
+                    required
+                  />
                 </div>
                 <div class="campo">
                   <label for="bairro">Bairro: </label>
-                  <input type="text" name="bairro" id="bairro" placeholder="Digite seu bairro" />
+                  <input type="text" name="bairro" id="bairro" placeholder="Digite seu bairro" required />
                 </div>
                 <div class="campo">
                   <label for="cidade">Cidade: </label>
-                  <input type="text" name="cidade" id="cidade" placeholder="Digite sua cidade" />
+                  <input type="text" name="cidade" id="cidade" placeholder="Digite sua cidade" required />
                 </div>
                 <div class="campo">
                   <label for="estado">Estado: </label>
-                  <input type="text" name="estado" id="estado" placeholder="Digite seu estado" />
+                  <input type="text" name="estado" id="estado" placeholder="Digite seu estado" required />
                 </div>
               </div>
             </fieldset>
@@ -131,6 +137,7 @@
                 viewBox="0 0 16 16"
                 fill="currentColor"
                 class="seta-cima"
+                id="setaCima"
                 style="width: 15px"
               >
                 <path
@@ -144,6 +151,7 @@
                 viewBox="0 0 16 16"
                 fill="currentColor"
                 class="seta-baixo"
+                id="setaBaixo"
                 style="width: 15px"
               >
                 <path
@@ -154,12 +162,12 @@
               </svg>
             </span>
           </button>
-          <div class="caixa-desconto">
+          <div class="caixa-desconto" id="boxDescount">
             <input type="text" id="descontoText" class="desconto-text-display" placeholder="Digite o código" />
-            <button id="btnAplicar" class="btn-aplicar-display">Aplicar</button>
+            <button id="btnAplicar" class="btn-aplicar-display" onclick="applyDescount()">Aplicar</button>
             <p id="paragrafoDesconto"></p>
-            <p>Preço total: R$ <span id="precoDescontoSpan">1200,00</span></p>
           </div>
+          <p id="precoDescontoTotal">Preço total: R$ 1200,00</p>
           <div class="icons-banks">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -310,5 +318,7 @@
       |
       <p>Política de privacidade</p>
     </footer>
+    <script src="formulario.js"></script>
+    <script src="desconto.js"></script>
   </body>
 </html>
